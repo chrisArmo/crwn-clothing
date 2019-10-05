@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import "./directory-menu.styles.scss";
+import './directory-menu.styles.scss';
 
-import MenuItem from "../menu-item/menu-item.component";
+import MenuItem from '../menu-item/menu-item.component';
 
 class DirectoryMenu extends Component {
   constructor(props) {
@@ -11,26 +11,38 @@ class DirectoryMenu extends Component {
     this.state = {
       departments: [
         {
+          title: 'hats',
+          imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
           id: 1,
-          title: "Hats"
+          linkUrl: 'shop/hats',
         },
         {
+          title: 'jackets',
+          imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
           id: 2,
-          title: "Jackets"
+          linkUrl: 'shop/jackets',
         },
         {
+          title: 'sneakers',
+          imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
           id: 3,
-          title: "Sneakers"
+          linkUrl: 'shop/sneakers',
         },
         {
+          title: 'womens',
+          imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+          size: 'large',
           id: 4,
-          title: "Womans"
+          linkUrl: 'shop/womens',
         },
         {
+          title: 'mens',
+          imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+          size: 'large',
           id: 5,
-          title: "Mans"
-        }
-      ]
+          linkUrl: 'shop/mens',
+        },
+      ],
     };
   }
 
