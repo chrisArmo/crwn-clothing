@@ -50,8 +50,8 @@ class DirectoryMenu extends Component {
     return (
       <div className="directory-menu">
         {this.state.departments.length &&
-          this.state.departments.map(sec => (
-            <MenuItem key={sec.id} {...sec} />
+          this.state.departments.map(({ id, ...departmentProps }) => (
+            <MenuItem key={id} {...departmentProps} />
           ))}
       </div>
     );
